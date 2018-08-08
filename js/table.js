@@ -55,7 +55,6 @@
 
     if (delay.checked) {
       clearTable();
-
       rowsData.forEach(function (it) {
         if (it.fact !== null) {
           newData.push(it);
@@ -65,6 +64,7 @@
       newData.forEach(makeRows);
     } else {
       clearTable();
+      newData = [];
       rowsData.forEach(makeRows);
     }
   };

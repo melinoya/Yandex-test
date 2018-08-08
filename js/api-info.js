@@ -12,7 +12,7 @@
   var letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
   var createTime = function (min, max) {
-    var newTime = window.util.createRandom(min, max);
+    var newTime = window.createRandom(min, max);
     if (newTime <= NUMBER_WITH_ZERO) {
       newTime = '0' + newTime;
     }
@@ -27,7 +27,7 @@
 
   // fact time
   var createFact = function () {
-    var factTime = window.util.createRandom(0, 1);
+    var factTime = window.createRandom(0, 1);
     
     if (factTime === 0)  {
       factTime = null; 
@@ -42,14 +42,14 @@
 
   // city
   var createCity = function () {
-    var city = cities[window.util.createRandom(0, cities.length - 1)];
+    var city = cities[window.createRandom(0, cities.length - 1)];
     return city;
   }
 
   // number
   var createFlight = function () {
-    var flightLetters = letters[window.util.createRandom(0, letters.length - 1)] + letters[window.util.createRandom(0, letters.length - 1)];
-    var flightNumbers = window.util.createRandom(10, 9999);
+    var flightLetters = letters[window.createRandom(0, letters.length - 1)] + letters[window.createRandom(0, letters.length - 1)];
+    var flightNumbers = window.createRandom(10, 9999);
     var flight = flightLetters + ' ' + flightNumbers;
     return flight;
   };
