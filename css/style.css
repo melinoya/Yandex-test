@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+
+  font-family: "Tahoma", sans-serif;
+  font-size: 150%;
+
+  color: #000000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* index.html */
+
+.main-header { 
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: -30px;
+}
+
+.main-nav {
+  padding: 0 20px;
+}
+
+.main-nav__list  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-nav__list li {
+  margin-right: 30px;
+}
+
+.main-nav__list li:last-of-type {
+  margin-right: 0;
+}
+
+.main-nav__list a {
+  color: #000000;
+  text-decoration: none;
+
+cursor: pointer;
+}
+
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+
+  background: url("../img/bg-main.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome {
+  width: 100%;
+  margin-top: 250px;
+
+  text-align: center;
+  font-size: 500%;
+}
+
+.choice a {
+  display: block;
+  margin-left: 50px;
+
+  text-decoration: dotted;
+  color: orange;
+}
+
+.choice p {
+  margin: 0;
+  color: rgb(231, 42, 0);
+}
+
+.choice__arrival {
+  margin-bottom: 50px;
+}
+
+/* arrival.html and departure.html */
+
+.wrapper {
+  width: 99vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.breadcrumbs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs__list li {
+  margin-right: 40px;
+}
+
+.breadcrumbs__list a {
+  color: orange;
+  text-decoration: none;
+  font-size: 80%;
+
+  cursor: pointer;
+}
+
+.another-page {
+  margin-bottom: 100px;
+}
+
+.another-page a {
+  color: rgb(231, 42, 0);
+  text-decoration: none;
+}
+
+.plane-filter {
+  margin-bottom: 30px;
+}
+
+.plane-filter__number {
+  padding-right: 5px;
+  margin-right: 30px;
+
+  font-size: 100%;
+
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.plane-filter__delay {
+  margin-left: 10px;
+}
+
+.schedule__table {
+  width: 98%;
+
+  border-collapse: collapse;
+}
+
+.schedule__table th {
+  padding: 0 5px;
+
+  border: 2px solid #000000;
+
+  text-align: center;
+}
+
+.schedule__plan,
+.schedule__fact {
+  width: 10%;
+  
+  text-align: center;
+}
+.schedule__number {
+  width: 20%;
+}
+
+.schedule__city {
+  width: 40%;
+}
+
+.schedule__number {
+  width: 200px;
+}
+
+.schedule td {
+  padding: 20px;
+
+  border-bottom: 2px solid #000000;
+}
+
+.row__plan,
+.row__fact,
+.row__number {
+  text-align: center;
+}

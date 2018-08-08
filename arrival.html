@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Расписание прилетов</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>    
+    <header class="main-header">
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li><a href="index.html">Главная страница</a></li>
+          <li><a href="departure.html">Табло прилета</a></li>
+          <li><a>Табло вылета</a></li>
+        </ul>
+      </nav> <!-- main-nav-->
+
+    </header> <!-- main-header -->
+
+    <main>
+      <div class="wrapper">
+
+        <nav class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a>Табло прилетов</a></li>
+          </ul>
+        </nav> <!-- breadcrumbs -->
+
+        <div class="another-page">
+          <a href="departure.html">Посмотреть табло вылета</a>
+        </div>
+
+        <section class="plane-filter">
+          <form action="" class="plane-filter__form" autocomplete="off" method="POST">
+            <input class="plane-filter__number" id="number" name="number" type="text" placeholder="Поиск по номеру рейса">
+
+            <input id="delay" name="delay" type="checkbox">
+            <label for="delay" class="plane-filter__delay">Показать только задержанные рейсы</label>
+          </form>
+        </section> <!-- plane-filter -->
+
+        <section class="schedule">
+          <table class="schedule__table">
+
+            <thead>
+              <tr>
+                <th class="schedule__plan">Плановое время</th>
+                <th class="schedule__fact">Фактическое время</th>
+                <th class="schedule__city">Город вылета</th>
+                <th class="schedule__number">Номер рейса</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- сюда вставляется инфа о полетах из шаблона -->
+            </tbody>
+          </table>
+        </section> <!-- schedule -->
+      </div> <!-- wrapper -->
+
+      <template id="row">
+        <tr>
+          <td class="row__plan"></td>
+          <td class="row__fact"></td>
+          <td class="row__city"></td>
+          <td class="row__number"></td>
+        </tr>
+      </template>
+
+    </main>
+    <script src="js/api-info.js"></script>
+    <script src="js/util.js"></script>    
+    <script src="js/table.js"></script>
+
+  </body>
+
+  
+</html>
